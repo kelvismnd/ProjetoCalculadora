@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/stylePrincipal.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/scriptControles.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="topo">
+			<input type="button" id="modificar" value="mudar">
+			<!-- <span>Calculadora de Alguma Coisa...</span> -->
+		</div>
+		<div id="containerCalculadora">
+
+			<input type="text" id="visor"><br>
+			<input type="button" class="but" value="C">
+			<input type="button" class="but" value="&larr;">
+			<input type="button" class="but" value="+-">
+			<input type="button" class="but" value="√">
+			<br>
+			<input type="button" class="but" value="7" onclick="preencher(7)">
+			<input type="button" class="but" value="8" onclick="preencher(8)">
+			<input type="button" class="but" value="9" onclick="preencher(9)">
+			<input type="button" class="but" value="+" onclick="preencher('+')">
+			<br>
+			<input type="button" class="but" value="4" onclick="preencher(4)">
+			<input type="button" class="but" value="5" onclick="preencher(5)">
+			<input type="button" class="but" value="6" onclick="preencher(6)">
+			<input type="button" class="but" value="-" onclick="preencher('-')">
+			<br>
+			<input type="button" class="but" value="1" onclick="preencher(1)">
+			<input type="button" class="but" value="2" onclick="preencher(2)">
+			<input type="button" class="but" value="3" onclick="preencher(3)">
+			<input type="button" class="but" value="*" onclick="preencher('*')">
+			<br>
+			<input type="button" id="but-zero" value="0" onclick="preencher(0)">
+			<input type="button" class="but" value=",">
+			<input type="button" class="but" value="=" onclick="calcular()">
+		</div>
+	</div>
+	<div id="containerControlesModific">
+		<section id="container-botoes">
+			<input type="button" class="botoes" value="background">
+			<input type="button" class="botoes" value="cor botoes">
+			<input type="button" class="botoes" value="cor topo">
+			<br>
+			<input type="button" class="botoes" value="forma botoes">
+			<input type="button" class="botoes" value="img-fundo">
+			<input type="button" class="botoes" value="girar">
+		</section>
+	</div>
+
+</body>
+</html>
