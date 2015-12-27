@@ -1,0 +1,93 @@
+/*@import url(https://fonts.googleapis.com/css?family=Poiret+One);*/
+
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:#345e6c;
+}
+div#topo{
+	display:block;
+	background:white;
+	height:100px;
+	box-shadow: 0px 4px 4px black;
+}
+div#containerCalculadora{
+	display:table;
+	margin:100px auto;
+}
+input#visor{
+	width:260px;
+	height:40px;
+	border:0;
+	color:#345e6c;
+	font-size:17px;
+	font-family:"Arial";
+	text-align:right;
+	padding-right:5px;
+}
+input.but{
+	cursor:pointer;
+	border:0;
+	background:white;
+	margin-right:8px;
+	margin-top:10px;
+	width:60px;
+	height:60px;
+	font-size:18px;
+}
+input#but-zero{
+	cursor:pointer;
+	border:0;
+	background:white;
+	margin-right:8px;
+	margin-top:10px;
+	width:128px;
+	height:60px;
+	font-family:"Arial";
+}
+span{
+	font-size:35px;
+	display:table;
+	margin:auto;
+	padding-top:35px;
+	font-family: 'Poiret One', cursive;
+}
+input#modificar{
+	position:absolute;
+	top:35px;
+	padding:10px;
+	left:30px;
+	width:60px;
+	height:40px;
+	background:white;
+	cursor:pointer;
+	border:1px solid #666;
+}
+
+
+/* controles para fazer modificação*/
+div#containerControlesModific{
+	position:absolute;
+	background:white;
+	width:300px;
+	top:100px;
+	height:600px;
+}
+section#container-botoes{
+	display:table;
+	margin-top:30px;
+	margin-left:10px;
+}
+input.botoes{
+	width:85px;
+	height:50px;
+	padding-left:4px;
+	padding-right:4px; 
+	margin-right:10px;
+	margin-top:15px;
+	cursor:pointer;
+	border:1px solid #999;
+	background:white;
+}
