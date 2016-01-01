@@ -15,33 +15,35 @@
 			<input type="button" id="modificar" value="mudar">
 			<!-- <span>Calculadora de Alguma Coisa...</span> -->
 		</div>
-		<div id="containerCalculadora">
-
-			<input type="text" id="visor"><br>
-			<input type="button" class="but" value="C">
-			<input type="button" class="but" value="&larr;">
-			<input type="button" class="but" value="+-">
-			<input type="button" class="but" value="√">
-			<br>
-			<input type="button" class="but" value="7" onclick="preencher(7)">
-			<input type="button" class="but" value="8" onclick="preencher(8)">
-			<input type="button" class="but" value="9" onclick="preencher(9)">
-			<input type="button" class="but" value="+" onclick="preencher('+')">
-			<br>
-			<input type="button" class="but" value="4" onclick="preencher(4)">
-			<input type="button" class="but" value="5" onclick="preencher(5)">
-			<input type="button" class="but" value="6" onclick="preencher(6)">
-			<input type="button" class="but" value="-" onclick="preencher('-')">
-			<br>
-			<input type="button" class="but" value="1" onclick="preencher(1)">
-			<input type="button" class="but" value="2" onclick="preencher(2)">
-			<input type="button" class="but" value="3" onclick="preencher(3)">
-			<input type="button" class="but" value="*" onclick="preencher('*')">
-			<br>
-			<input type="button" id="but-zero" value="0" onclick="preencher(0)">
-			<input type="button" class="but" value=",">
-			<input type="button" class="but" value="=" onclick="calcular()">
-		</div>
+		<form id="formCalculadora">
+			<div id="containerCalculadora">
+				<input type="text" id="visor" value=""><br>
+				<div id="demo"></div>
+				<input type="reset" class="but" value="C">
+				<input type="button" class="but" value="&larr;" onclick="limparPorNum()">
+				<input type="button" class="but" value="+-">
+				<input type="button" class="but" value="√" onclick="raiz()">
+				<br>
+				<input type="button" class="but" value="7" onclick="preencher(this.value)">
+				<input type="button" class="but" value="8" onclick="preencher(this.value)">
+				<input type="button" class="but" value="9" onclick="preencher(this.value)">
+				<input type="button" class="but" value="+" onclick="preencher('+')">
+				<br>
+				<input type="button" class="but" value="4" onclick="preencher(this.value)">
+				<input type="button" class="but" value="5" onclick="preencher(this.value)">
+				<input type="button" class="but" value="6" onclick="preencher(this.value)">
+				<input type="button" class="but" value="-" onclick="preencher('-')">
+				<br>
+				<input type="button" class="but" value="1" onclick="preencher(this.value)">
+				<input type="button" class="but" value="2" onclick="preencher(this.value)">
+				<input type="button" class="but" value="3" onclick="preencher(this.value)">
+				<input type="button" class="but" value="*" onclick="preencher('*')">
+				<br>
+				<input type="button" id="but-zero" value="0" onclick="preencher(this.value)">
+				<input type="button" class="but" value="," onclick="preencher(this.value)">
+				<input type="button" class="but" value="=" onclick="calcular()">
+			</div>
+		</form>
 	</div>
 	<div id="containerControlesModific">
 		<section id="container-botoes">
